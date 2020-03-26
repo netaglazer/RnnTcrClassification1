@@ -18,6 +18,9 @@ def clip_gradient(model, clip_value):
         p.grad.data.clamp_(-clip_value, clip_value)
 
 
+
+
+
 def train_model(model, batch_size, epoch):
     total_epoch_loss = 0
     total_epoch_acc = 0
